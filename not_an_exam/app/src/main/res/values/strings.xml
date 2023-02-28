@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">not_an_exam</string>
+    <string-array name="operators" >
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+
+    <string name="num1">Number 1</string>
+    <string name="num1_auto">Enter a number</string>
+    <string name="num2">Number 2</string>
+    <string name="num2_auto">Enter another Number</string>
+    <string name="oper">Operator</string>
+    <string name="button">Calculate</string>
+</resources>

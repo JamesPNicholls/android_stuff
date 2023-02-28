@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lab2survey.page1">
+
+    <Button
+        android:id="@+id/button_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/button_p1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:onClick="go_to_page2"/>
+
+    <Spinner
+        android:id="@+id/coutnry_spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:entries="@array/countries"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="167dp"
+        android:layout_height="317dp"
+        android:orientation="vertical"
+        android:checkedButton="@id/_under18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649">
+
+        <RadioButton
+            android:id="@+id/_under18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/under_18"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="438dp" />
+
+        <RadioButton
+            android:id="@+id/_18to30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_18to30"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="489dp" />
+
+        <RadioButton
+            android:id="@+id/_31to50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_31to50"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="633dp" />
+
+        <RadioButton
+            android:id="@+id/_51to65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_51to65"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="537dp" />
+
+        <RadioButton
+            android:id="@+id/_over65"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/_above65"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="585dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/choose_nat"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/coutnry_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Choose Your Age Range:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+</androidx.constraintlayout.widget.ConstraintLayout>
